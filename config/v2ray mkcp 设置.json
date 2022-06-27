@@ -1,0 +1,35 @@
+{
+  "inbounds": [{
+    "port": 33333,
+    "protocol": "vmess",
+    "settings": {
+      "clients": [
+        {
+          "id": "f91606be-00f2-4f82-afc1-28a902944e2b",
+          "level": 1,
+          "alterId": 0
+        }
+      ]
+    },
+    "streamSettings": {
+        "network": "mkcp",
+        "kcpSettings": {
+            "uplinkCapacity": 300,
+            "downlinkCapacity": 100,
+            "congestion": true,
+            "header": {
+                "type": "wechat-video"
+            },
+            "seed": "e6ef9811-5057-451f-85f3-8b3d9c6f809e"
+        }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {}
+  },{
+    "protocol": "blackhole",
+    "settings": {},
+    "tag": "blocked"
+  }]
+}
